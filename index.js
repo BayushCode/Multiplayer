@@ -9,7 +9,7 @@ canvas.height = window.innerHeight-7;
 var c = canvas.getContext('2d');
 
 
-const gravity = 0.4;
+const gravity = 0;
 class Sprite {
   constructor({position, velocity}) {
     this.position = position;
@@ -95,6 +95,10 @@ player.update();
     player.velocity.x = -1;
   }else if (keys.d.pressed && lastKey === 'd'){
     player.velocity.x = 1;
+  }else if (keys.s.pressed && lastKey === 's'){
+    player.velocity.y = 1;
+  }else if (keys.w.pressed && lastKey === 'w'){
+    player.velocity.y = -1;
   }
   
   //updates
