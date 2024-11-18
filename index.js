@@ -28,11 +28,11 @@ class Sprite {
     this.position.x += this.velocity.x;
     this.position.y += this.velocity.y;
     
-    if(this.position.y + this.height + this.velocity.y >= canvas.height){
+    /*if(this.position.y + this.height + this.velocity.y >= canvas.height){
       this.velocity.y = 0;
     }else{
       this.velocity.y += gravity;
-    }
+    }*/
   }
 }
 
